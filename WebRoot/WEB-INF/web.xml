@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  <servlet-name>CheckloginServlet</servlet-name>
+  <servlet-class>CheckloginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+   <servlet-name>CheckloginServlet</servlet-name>
+   <url-pattern>/checklogin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>SignupServlet</servlet-name>
+  <servlet-class>SignupServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+   <servlet-name>SignupServlet</servlet-name>
+   <url-pattern>/signup</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>ModifyServlet</servlet-name>
+  <servlet-class>ModifyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+   <servlet-name>ModifyServlet</servlet-name>
+   <url-pattern>/modify</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>  ListuserfriendServlet</servlet-name>
+  <servlet-class>  ListuserfriendServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+   <servlet-name>ListuserfriendServlet</servlet-name>
+   <url-pattern>/listuserfriend</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>sweetwordsServlet</servlet-name>
+  <servlet-class> sweetwordsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+   <servlet-name>sweetwordsServlet</servlet-name>
+   <url-pattern>/listsweetwords</url-pattern>
+  </servlet-mapping>
+  
+
+  <servlet>
+  <servlet-name>interactionServlet</servlet-name>
+  <servlet-class>interactionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+   <servlet-name>interactionServlet</servlet-name>
+   <url-pattern>/interaction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name> ListqueryfriendsServlet</servlet-name>
+  <servlet-class> ListqueryfriendsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+   <servlet-name> ListqueryfriendsServlet</servlet-name>
+   <url-pattern>/listqueryfriends</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>sweetwordsqueryServlet</servlet-name>
+  <servlet-class>sweetwordsqueryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+   <servlet-name> sweetwordsqueryServlet</servlet-name>
+   <url-pattern>/sweetwordsquery</url-pattern>
+  </servlet-mapping>
+</web-app>
